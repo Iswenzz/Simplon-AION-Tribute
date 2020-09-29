@@ -5,7 +5,11 @@ export const Home: FunctionComponent = (): JSX.Element =>
 {
 	return (
 		<>
-			<Header image={require("../assets/images/fantasy-bg.jpg")} />
+			<video className={"header-video"} autoPlay muted loop poster="">
+				<source src={require("../assets/videos/aion-open-beta-trailer.mp4")}
+					type="video/mp4" />
+			</video>
+			<Header />
 		</>
 	);
 };

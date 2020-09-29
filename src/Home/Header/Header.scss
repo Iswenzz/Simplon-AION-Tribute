@@ -1,7 +1,23 @@
 .header {
+	z-index: 1;
 	width: 100vw;
   	height: 100vh;
 	color: gainsboro;
 	font-family: Peddana, cursive;
 	font-size: 2.5em;
+	background-color: transparent;
+
+	h1 {
+		font-family: Peddana, serif;
+	}
+}
+
+.header-video {
+	z-index: -1;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	transform: translateX(calc((100% - 100vw) / 2));
 }

@@ -1,7 +1,8 @@
 import {FunctionComponent} from "react";
 import React from "react";
-import "./Header.scss";
 import {Grid} from "@material-ui/core";
+import "Common.scss";
+import "./Header.scss";
 
 interface HeaderProps
 {
@@ -14,7 +15,7 @@ export const Header: FunctionComponent<HeaderProps> = (props: HeaderProps): JSX.
 		<Grid className={"header"} container direction={"row"}
 			  justify={"center"} alignContent={"center"}
 			  style={{backgroundImage: `url(${props.image}`}}>
-			<h1>Lorem Ipsum</h1>
+			<h1>AION Tribute</h1>
 		</Grid>
 	);
 };
