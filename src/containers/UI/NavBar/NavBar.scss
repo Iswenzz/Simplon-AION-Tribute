@@ -1,0 +1,16 @@
+.navbar {
+	background-color: transparent !important;
+	box-shadow: none !important;
+	padding: 0 10%;
+
+	button {
+		margin: 1em;
+		font-family: 'Cinzel Decorative', cursive;
+		color: gainsboro;
+		text-transform: uppercase;
+		text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+		font-size: 18px;
+		border-radius: 0;
+		border-bottom: solid 1px silver;
+	}
+}
