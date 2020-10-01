@@ -14,7 +14,7 @@ export const Home: FunctionComponent = (): JSX.Element =>
 
 			{/* Header */}
 			<VideoBG className={"header-video"} autoPlay muted loop poster={""}
-				sources={[{src: require("../../assets/videos/aion-open-beta-trailer.mp4"), type: "video/mp4"}]}
+				sources={[{src: require("../../assets/videos/aion-obt-trailer.mp4"), type: "video/mp4"}]}
 					 clip={require("../../assets/images/clip/video-header-clip.png")} />
 			<Header />
 
