@@ -6,6 +6,9 @@ export interface MediaCardProps extends React.HTMLProps<HTMLElement>
 {
 	image?: string,
 	mediaClass?: string,
+	desc?: string,
+	height?: number | string,
+	width?: number | string
 }
 
 export class MediaCard extends PureComponent<MediaCardProps>
@@ -13,7 +16,7 @@ export class MediaCard extends PureComponent<MediaCardProps>
 	public render(): JSX.Element
 	{
 		return (
-			<Card className={this.props.className || "mediacard"} component={"article"}>
+			<Card className={"mediacard"} style={{height: this.props.height, width: this.props.width}}>
 				<CardActionArea>
 					<CardMedia component={"img"} className={this.props.mediaClass} image={this.props.image} title={this.props.title} />
 					<CardContent>
@@ -21,7 +24,7 @@ export class MediaCard extends PureComponent<MediaCardProps>
 							{this.props.title}
 						</Typography>
 						<Typography variant="body2" color="textSecondary" component="p">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. A impedit iusto, minima nulla placeat recusandae. Dignissimos excepturi magni molestias nihil possimus quia suscipit tempore! Eaque expedita mollitia nihil reiciendis rem!
+							{this.props.desc}
 						</Typography>
 					</CardContent>
 				</CardActionArea>

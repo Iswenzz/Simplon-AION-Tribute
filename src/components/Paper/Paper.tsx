@@ -5,7 +5,7 @@ import "./Paper.scss";
 export interface PaperProps
 {
 	title?: string,
-	desc?: string,
+	desc?: string | JSX.Element,
 	image?: string,
 	className?: string,
 	previewStyle?: React.CSSProperties,

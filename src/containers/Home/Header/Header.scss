@@ -28,15 +28,15 @@
 }
 
 .header-video {
+	object-fit: cover;
 	z-index: -1;
 	position: absolute;
 	right: 0;
 	bottom: 0;
 	min-width: 100%;
 	min-height: 100%;
-	transform: translateX(calc((100% - 100vw) / 2));
 	mask-size: 120% auto;
 	mask-position: center center;
 	mask-repeat: no-repeat;
-	filter: contrast(120%) brightness(50%);
+	filter: contrast(120%) brightness(80%);
 }

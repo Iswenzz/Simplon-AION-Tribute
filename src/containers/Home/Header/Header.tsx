@@ -19,13 +19,6 @@ export const Header: FunctionComponent<HeaderProps> = (props: HeaderProps): JSX.
 			<Typography className={"header-typo"} variant={"h1"} component={"h1"}>
 				AION Tribute
 			</Typography>
-			<section>
-				<Grid className={"header-buttons"} container direction={"row"} justify={"center"}
-					  alignItems={"center"}>
-					<Button variant="outlined" color={"primary"} size={"large"}>Default</Button>
-					<Button variant="outlined" color={"secondary"} size={"large"}>Default</Button>
-				</Grid>
-			</section>
 		</Grid>
 	);
 };

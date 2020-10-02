@@ -34,8 +34,8 @@ export class Footer extends PureComponent
 				<Container maxWidth={"md"}>
 					<Grid container direction={"row"} justify={"space-evenly"} alignItems={"center"}>
 						<Grid item xs={6}>
-							<img src={require("assets/images/ncsoft-logo.svg")} alt="NCSoft Logo"/>
-							<img src={require("assets/images/ncsoft-logo.svg")} alt="NCSoft Logo"/>
+							<img src={require("assets/images/logo/ncsoft-logo.svg")} alt="NCSoft Logo"/>
+							<img src={require("assets/images/logo/ncsoft-logo.svg")} alt="NCSoft Logo"/>
 						</Grid>
 						<Grid className={"footer-copyrights"} item xs={6}>
 							<Typography paragraph component={"p"}>
@@ -43,8 +43,8 @@ export class Footer extends PureComponent
 								주소 경기도 성남시 분당구 대왕판교로 644번길 12 PC 게임 고객상담 1600-0020 팩스 02-2186-3550 이메일 credit@ncsoft.com
 								AION ® is a registered trademark of NCSOFT Corporation. Copyright © NCSOFT Corporation. All Rights Reserved.
 							</Typography>
-							<Typography variant={"h6"} component={"h6"}>
-								Iswenzz (c) 2020
+							<Typography className={"footer-iswenzz"} variant={"h6"} component={"h6"}>
+								Iswenzz © 2020
 							</Typography>
 						</Grid>
 					</Grid>
