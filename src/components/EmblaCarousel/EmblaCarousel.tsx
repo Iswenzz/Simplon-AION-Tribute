@@ -13,7 +13,8 @@ export interface EmblaCarouselProps
 	children: any[],
 	height?: string,
 	width?: string,
-	style?: React.CSSProperties
+	style?: React.CSSProperties,
+	className?: string
 }
 
 export interface EmblaCarouselState
@@ -90,7 +91,7 @@ export const EmblaCarouselComponent: FunctionComponent<EmblaCarouselProps> = (pr
 	}, [state.embla]);
 
 	return (
-		<Grid style={props.style} container direction="row" justify="center" alignItems="center"
+		<Grid className={props.className} style={props.style} container direction="row" justify="center" alignItems="center"
 			component="article">
 			<section style={{ width: props.width, height: props.height }} className="embla">
 				<EmblaCarouselReact className="embla-viewport" emblaRef={setEmbla} 

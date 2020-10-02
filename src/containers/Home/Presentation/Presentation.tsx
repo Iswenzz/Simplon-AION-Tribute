@@ -1,6 +1,6 @@
 import React, {PureComponent} from "react";
 import EmblaCarousel from "../../../components/EmblaCarousel/EmblaCarousel";
-import * as uuid from "uuid";
+import "./Presentation.scss";
 
 const items = [
 	<img src={"https://uploadstatic-sea.mihoyo.com/contentweb/20200924/2020092417575267258.jpg"} />,
@@ -16,13 +16,8 @@ export class Presentation extends PureComponent
 	public render(): JSX.Element
 	{
 		return (
-			<EmblaCarousel autoplay delayLength={2000}>
-				{items.map((item, i) => (
-					<div key={i}>
-						{item}
-					</div>
-				))}}
-			</EmblaCarousel>
+			<EmblaCarousel className={"presentation-carousel"} width={"100%"}
+				autoplay={false} delayLength={10000} children={items} />
 		);
 	}
 }
