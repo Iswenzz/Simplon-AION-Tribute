@@ -1,0 +1,42 @@
+.footer {
+	padding: 10px;
+	background-color: #1a1a1a;
+	border-color: #007bff;
+	box-shadow: 0 0 20px #007bff;
+
+	#{&}-copyrights {
+		margin: 1em 0;
+
+		p {
+			font-family: "Inknut Antiqua", serif;
+			text-align: center;
+			color: gainsboro;
+		}
+
+		h6 {
+			font-family: "Inknut Antiqua", serif;
+			font-size: 1.5em;
+			padding: 0 4em;
+			color: gainsboro;
+			text-align: center;
+		}
+	}
+
+	hr {
+		border-color: dimgray;
+	}
+
+	button {
+		background-color: transparent;
+
+		path {
+			fill: gainsboro;
+		}
+	}
+
+	img {
+		margin: 2em 0;
+		width: 150px;
+		height: auto;
+	}
+}
