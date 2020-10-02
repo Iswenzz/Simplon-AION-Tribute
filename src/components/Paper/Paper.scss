@@ -1,0 +1,34 @@
+.paper {
+	position: relative;
+	margin: 5em 0;
+
+	h2 {
+		font-family: "Inknut Antiqua", serif;
+	}
+
+	p {
+		font-family: "Cormorant", serif;
+		font-size: 1.5em;
+		padding: 0 4em;
+	}
+
+	#{&}-container {
+		position: relative;
+		background-image: url("https://genshin.mihoyo.com/_nuxt/img/77bb3df.png");
+		background-size: 100% 100%;
+		padding: 1em;
+		margin: auto;
+		max-width: 1000px;
+		min-height: 500px;
+	}
+
+	#{&}-preview {
+		position: absolute;
+		top: -12%;
+
+		img {
+			width: 400px;
+			height: auto;
+		}
+	}
+}
