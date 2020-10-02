@@ -1,0 +1,19 @@
+.mediacard {
+	max-width: 25%;
+	margin: 2em;
+	background-color: rgba(20, 20, 20, 0.7) !important;
+
+	h2, p {
+		color: gainsboro !important;
+	}
+
+	span {
+		color: orange !important;
+	}
+
+	img {
+		height: 200px;
+		width: auto;
+		object-fit: cover;
+	}
+}
