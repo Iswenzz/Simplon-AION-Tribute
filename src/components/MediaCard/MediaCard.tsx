@@ -1,5 +1,5 @@
 import React, {PureComponent} from "react";
-import {Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Typography} from "@material-ui/core";
+import {Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Grid, Typography} from "@material-ui/core";
 import "./MediaCard.scss";
 
 export interface MediaCardProps extends React.HTMLProps<HTMLElement>
@@ -16,9 +16,13 @@ export class MediaCard extends PureComponent<MediaCardProps>
 	public render(): JSX.Element
 	{
 		return (
-			<Card className={"mediacard"} style={{height: this.props.height, width: this.props.width}}>
-				<CardActionArea>
-					<CardMedia component={"img"} className={this.props.mediaClass} image={this.props.image} title={this.props.title} />
+			<Card className={`mediacard ${this.props.className}`}>
+				<CardActionArea component={"header"}>
+					<CardMedia component={"img"} className={this.props.mediaClass}
+							   image={this.props.image} title={this.props.title} />
+				</CardActionArea>
+				<Grid component={"section"} className={"mediacard-container"} container direction={"column"}
+					  alignItems={"center"} justify={"space-between"}>
 					<CardContent>
 						<Typography gutterBottom variant="h5" component="h2">
 							{this.props.title}
@@ -27,15 +31,15 @@ export class MediaCard extends PureComponent<MediaCardProps>
 							{this.props.desc}
 						</Typography>
 					</CardContent>
-				</CardActionArea>
-				<CardActions>
-					<Button size="small" color="primary">
-						Lorem
-					</Button>
-					<Button size="small" color="primary">
-						Ipsum
-					</Button>
-				</CardActions>
+					<CardActions className={"mediacard-actions"}>
+						<Button size="small" color="primary">
+							Lorem
+						</Button>
+						<Button size="small" color="primary">
+							Ipsum
+						</Button>
+					</CardActions>
+				</Grid>
 			</Card>
 		);
 	}

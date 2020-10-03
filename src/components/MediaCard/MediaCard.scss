@@ -1,7 +1,21 @@
 .mediacard {
-	max-width: 25%;
+	position: relative;
 	margin: 2em;
 	background-color: rgba(20, 20, 20, 0.7) !important;
+
+	#{&}-container {
+		height: 100%;
+	}
+
+	#{&}-actions {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+
+	h2 {
+		text-align: center;
+	}
 
 	h2, p {
 		color: gainsboro !important;

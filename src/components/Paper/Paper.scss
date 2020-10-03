@@ -1,15 +1,18 @@
 .paper {
 	position: relative;
-	margin: 5em 0;
+	margin-top: 12em !important;
+	margin-bottom: 6em !important;
+	transform: scale(0.9);
 
 	h2 {
+		margin-top: 1em;
 		font-family: "Inknut Antiqua", serif;
 	}
 
 	p {
 		font-family: "Cormorant", serif;
 		font-size: 1.5em;
-		padding: 0 4em;
+		padding: 2em 4em;
 	}
 
 	#{&}-container {
@@ -19,7 +22,6 @@
 		padding: 1em;
 		margin: auto;
 		max-width: 1000px;
-		height: 1000px;
 	}
 
 	#{&}-preview {
@@ -28,6 +30,38 @@
 
 		img {
 			width: 400px;
+			height: 300px;
+			border-color: #007bff;
+			box-shadow: 0 0 20px #007bff;
+		}
+	}
+}
+
+.paper-mobile {
+	h2 {
+		margin-top: 2em;
+		margin-bottom: 1em;
+		font-family: "Inknut Antiqua", serif;
+	}
+
+	p {
+		font-family: "Cormorant", serif;
+		font-size: 1.5em;
+		padding: 4em 1em;
+	}
+
+	#{&}-container {
+		background-image: url("https://genshin.mihoyo.com/_nuxt/img/77bb3df.png");
+		background-size: 100% 100%;
+		padding: 1em;
+		margin: auto;
+	}
+
+	#{&}-preview {
+		padding: 0 2em;
+
+		img {
+			width: 100%;
 			height: 300px;
 			border-color: #007bff;
 			box-shadow: 0 0 20px #007bff;

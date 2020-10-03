@@ -1,7 +1,6 @@
 import {FunctionComponent} from "react";
 import React from "react";
-import {Button, Grid, Typography} from "@material-ui/core";
-import "../../../Common.scss";
+import {Grid, Typography} from "@material-ui/core";
 import "./Header.scss";
 
 interface HeaderProps

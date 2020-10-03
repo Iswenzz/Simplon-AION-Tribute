@@ -43,18 +43,21 @@ export class Presentation extends PureComponent
 				<Grid container className={"presentation"} direction={"column"} alignItems={"center"} justify={"center"}>
 					<Paper className={"presentation-paper"} title={"The Tower of Eternity"} desc={towerOfEternityLore}
 						   image={require("assets/images/bg/40.jpg")}
-						   previewStyle={{right: "-30%"}} paperStyle={{left: "-20%"}} />
+						   previewStyle={{right: "-30%"}} paperStyle={{left: "-8%"}} />
 					<Parallax className={"presentation-cards"} bgImageAlt="index" blur={4} strength={400}
 							  bgImage={require("assets/images/bg/6.jpg")}>
-						<Grid container justify={"center"} alignItems={"stretch"} direction={"row"}>
-							<MediaCard title={"Katalam"} desc={"Katalam was rich in diversity. An abundance of forests spread along the northern parts and sides of the map, an image in stark contrast with the arid and dry wasteland that made up the center. The southern part of the map was buried under a glacier, with its many mountain formations, cavern systems and imposing ice structures making for one of the game's most popular sightseeing spots."} image={require("assets/images/bg/17.jpg")} />
-							<MediaCard title={"Pandaemonium"} desc={"Pandaemonium, the city of darkness, is the capital of the Asmodian faction and is the apex of Asmodian technology, culture and style. Pandaemonium is the center of Asmodian life and as such, all aspects of Asmodian lifestyle can be found there. From the master artisans to the traders and brokers to government officials, all the denizens of Pandaemonium work diligently for the prosperity of Asmodae."} image={require("assets/images/bg/33.jpg")} />
-							<MediaCard title={"Abyss"} desc={"During the Cataclysm, the Tower of Eternity was shattered. When this occurred Atreia was sundered into two halves, leaving a base for the tower on each half of the world. Between the tower’s bases a great disharmonious resonance began to flow. This is where Reshanta lies."} image={require("assets/images/bg/31.jpg")} />
+						<Grid className={"presentation-cards-container"} container justify={"center"} alignItems={"stretch"} direction={"row"}>
+							<MediaCard className={"presentation-card"} title={"Katalam"} image={require("assets/images/bg/17.jpg")}
+									   desc={"Katalam was rich in diversity. An abundance of forests spread along the northern parts and sides of the map, an image in stark contrast with the arid and dry wasteland that made up the center. The southern part of the map was buried under a glacier, with its many mountain formations, cavern systems and imposing ice structures making for one of the game's most popular sightseeing spots."} />
+							<MediaCard className={"presentation-card"} title={"Pandaemonium"} image={require("assets/images/bg/33.jpg")}
+									   desc={"Pandaemonium, the city of darkness, is the capital of the Asmodian faction and is the apex of Asmodian technology, culture and style. Pandaemonium is the center of Asmodian life and as such, all aspects of Asmodian lifestyle can be found there. From the master artisans to the traders and brokers to government officials, all the denizens of Pandaemonium work diligently for the prosperity of Asmodae."} />
+							<MediaCard className={"presentation-card"} title={"Abyss"} image={require("assets/images/bg/31.jpg")}
+									   desc={"During the Cataclysm, the Tower of Eternity was shattered. When this occurred Atreia was sundered into two halves, leaving a base for the tower on each half of the world. Between the tower’s bases a great disharmonious resonance began to flow. This is where Reshanta lies."} />
 						</Grid>
 					</Parallax>
 					<Paper className={"presentation-paper"} title={"The Millennium War"} desc={theMilleniumWarLore}
 						image={require("assets/images/bg/41.jpg")}
-						previewStyle={{left: "-30%"}} paperStyle={{right: "-20%"}} />
+						previewStyle={{left: "-30%"}} paperStyle={{right: "-8%"}} />
 				</Grid>
 			</>
 		);

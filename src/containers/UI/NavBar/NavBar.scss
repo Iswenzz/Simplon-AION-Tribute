@@ -1,26 +1,43 @@
 .navbar {
+	height: 48px;
 	background-color: rgba(40, 40, 40, 0.7) !important;
-	padding: 0 10%;
+	padding: 0 5%;
 
 	#{&}-logo {
 		text-decoration: none;
 
 		h2 {
 			font-family: 'Cinzel Decorative', cursive;
+			text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
 			color: gainsboro;
 			font-size: 24px;
-			width: 300px;
+			user-select: none;
+			transition: text-shadow ease-in-out 0.2s;
+			white-space: nowrap;
+
+			&:hover {
+				text-shadow: 0 0 10px #00c0ff, 0 0 20px #00c0ff, 0 0 40px #00c0ff;
+			}
 		}
 	}
 
-	button {
+	#{&}-button {
+		background-color: transparent !important;
 		margin: 0 1em;
-		font-family: 'Cinzel Decorative', cursive;
-		color: gainsboro;
-		text-transform: uppercase;
-		text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
-		font-size: 18px;
-		border-radius: 0;
-		border-bottom: solid 1px silver;
+
+		button {
+			font-family: 'Cinzel Decorative', cursive;
+			color: gainsboro;
+			text-transform: uppercase;
+			text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+			font-size: 18px;
+			border-radius: 0;
+			border-bottom: solid 2px silver;
+			transition: text-shadow ease-in-out 0.2s;
+
+			&:hover {
+				text-shadow: 0 0 10px #00c0ff, 0 0 20px #00c0ff, 0 0 40px #00c0ff;
+			}
+		}
 	}
 }

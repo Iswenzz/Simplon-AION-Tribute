@@ -9,9 +9,11 @@
 		font-family: 'Cinzel Decorative', cursive;
 		color: gainsboro;
 		text-transform: uppercase;
+		text-align: center;
 		font-size: 80px;
 		text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
 		margin: 0.7em 0;
+		user-select: none;
 	}
 
 	#{&}-buttons {
@@ -40,16 +42,3 @@
 	}
 }
 
-.header-video {
-	object-fit: cover;
-	z-index: -1;
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	min-width: 100%;
-	min-height: 100%;
-	mask-size: 120% auto;
-	mask-position: center center;
-	mask-repeat: no-repeat;
-	filter: contrast(120%) brightness(80%);
-}

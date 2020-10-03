@@ -1,3 +1,5 @@
+@import "../../../Responsive";
+
 .presentation-carousel {
 	padding-bottom: 6em;
 
@@ -27,7 +29,23 @@
 	}
 
 	#{&}-card {
-		min-height: 600px;
+		max-width: 25%;
+
+		@include media(tablet_mobile, portrait) {
+			max-width: 100%;
+		}
+	}
+
+	#{&}-cards-container {
+		flex-direction: row;
+
+		@include media(tablet_mobile, portrait) {
+			flex-direction: column;
+		}
+	}
+
+	#{&}-card {
+		min-height: 500px;
 	}
 }
 

@@ -3,4 +3,19 @@ body {
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
+	overflow-x: hidden;
+}
+
+.home-video {
+	object-fit: cover;
+	z-index: -1;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 100vw;
+	height: 100vh;
+	mask-size: 120% 150%;
+	mask-position: center center;
+	mask-repeat: no-repeat;
+	filter: contrast(120%) brightness(80%);
 }
