@@ -5,6 +5,7 @@ import {Parallax} from "react-parallax";
 import Paper from "components/Paper/Paper";
 import MediaCard from "../../../components/MediaCard/MediaCard";
 import "./Presentation.scss";
+import {Element} from "react-scroll/modules";
 
 const items = [
 	<img src={require("assets/images/bg/52.jpg")} alt={"Aion Preview"} />,
@@ -41,9 +42,11 @@ export class Presentation extends PureComponent
 				<EmblaCarousel className={"presentation-carousel"} width={"100%"} loop draggable
 							   autoplay={false} delayLength={10000} children={items} />
 				<Grid container className={"presentation"} direction={"column"} alignItems={"center"} justify={"center"}>
+					<Element name={"lore-section"} />
 					<Paper className={"presentation-paper"} title={"The Tower of Eternity"} desc={towerOfEternityLore}
 						   image={require("assets/images/bg/40.jpg")}
 						   previewStyle={{right: "-30%"}} paperStyle={{left: "-8%"}} />
+					<Element name={"maps-section"} />
 					<Parallax className={"presentation-cards"} bgImageAlt="index" blur={4} strength={400}
 							  bgImage={require("assets/images/bg/6.jpg")}>
 						<Grid className={"presentation-cards-container"} container justify={"center"} alignItems={"stretch"} direction={"row"}>
@@ -55,6 +58,7 @@ export class Presentation extends PureComponent
 									   desc={"During the Cataclysm, the Tower of Eternity was shattered. When this occurred Atreia was sundered into two halves, leaving a base for the tower on each half of the world. Between the tower’s bases a great disharmonious resonance began to flow. This is where Reshanta lies."} />
 						</Grid>
 					</Parallax>
+					<Element name={"war-section"} />
 					<Paper className={"presentation-paper"} title={"The Millennium War"} desc={theMilleniumWarLore}
 						image={require("assets/images/bg/41.jpg")}
 						previewStyle={{left: "-30%"}} paperStyle={{right: "-8%"}} />

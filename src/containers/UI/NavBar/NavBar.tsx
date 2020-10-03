@@ -32,7 +32,7 @@ export const NavBar: FunctionComponent = (): JSX.Element =>
 				</Link>
 			</li>
 			<li>
-				<Link className="navbar-button" to="mmaps-section" smooth onClick={() => toggleDrawer(false)}
+				<Link className="navbar-button" to="maps-section" smooth onClick={() => toggleDrawer(false)}
 					  offset={isTabletOrMobileDevice ? 50 : 10}>
 					<Button size='large' color="inherit">Maps</Button>
 				</Link>
