@@ -1,4 +1,4 @@
-import React, {FunctionComponent, PureComponent} from "react";
+import React, {FunctionComponent, memo} from "react";
 import {Container, Grid, Typography} from "@material-ui/core";
 import "./Paper.scss";
 import {useMediaQuery} from "react-responsive";
@@ -63,4 +63,4 @@ export const Paper: FunctionComponent<PaperProps> = (props: PaperProps): JSX.Ele
 	return isTabletOrMobileDevice || isPortrait ? mobilePaper : desktopPaper;
 };
 
-export default Paper;
+export default memo(Paper);

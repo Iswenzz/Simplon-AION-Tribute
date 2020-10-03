@@ -1,4 +1,4 @@
-import React, {FunctionComponent, PureComponent} from "react";
+import React, {FunctionComponent, memo} from "react";
 import {Container, Fab, Grid, Typography} from "@material-ui/core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord, faYoutube, faGithub, faReddit, faFacebook, faTwitch, faVk } from "@fortawesome/free-brands-svg-icons";
@@ -58,4 +58,4 @@ export const Footer: FunctionComponent = (): JSX.Element =>
 	);
 };
 
-export default Footer;
+export default memo(Footer);
