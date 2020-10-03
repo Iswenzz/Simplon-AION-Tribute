@@ -4,17 +4,19 @@ import {Grid} from "@material-ui/core";
 import {Parallax} from "react-parallax";
 import Paper from "components/Paper/Paper";
 import MediaCard from "../../../components/MediaCard/MediaCard";
-import "./Presentation.scss";
 import {Element} from "react-scroll/modules";
+import Zoom from "react-medium-image-zoom";
+import "./Presentation.scss";
+import "react-medium-image-zoom/dist/styles.css";
 
 const items = [
-	<img src={require("assets/images/bg/52.jpg")} alt={"Aion Preview"} />,
-	<img src={require("assets/images/bg/26.jpg")} alt={"Aion Preview"} />,
-	<img src={require("assets/images/bg/25.jpg")} alt={"Aion Preview"} />,
-	<img src={require("assets/images/bg/24.jpg")} alt={"Aion Preview"} />,
-	<img src={require("assets/images/bg/56.jpg")} alt={"Aion Preview"} />,
-	<img src={require("assets/images/bg/55.jpg")} alt={"Aion Preview"} />,
-	<img src={require("assets/images/bg/19.jpg")} alt={"Aion Preview"} />
+	<Zoom overlayBgColorEnd={"rgba(0, 0, 0, 0.7)"}><img src={require("assets/images/bg/52.jpg")} alt={"Aion Preview"} width={500} /></Zoom>,
+	<Zoom overlayBgColorEnd={"rgba(0, 0, 0, 0.7)"}><img src={require("assets/images/bg/26.jpg")} alt={"Aion Preview"} width={500} /></Zoom>,
+	<Zoom overlayBgColorEnd={"rgba(0, 0, 0, 0.7)"}><img src={require("assets/images/bg/25.jpg")} alt={"Aion Preview"} width={500} /></Zoom>,
+	<Zoom overlayBgColorEnd={"rgba(0, 0, 0, 0.7)"}><img src={require("assets/images/bg/24.jpg")} alt={"Aion Preview"} width={500} /></Zoom>,
+	<Zoom overlayBgColorEnd={"rgba(0, 0, 0, 0.7)"}><img src={require("assets/images/bg/56.jpg")} alt={"Aion Preview"} width={500} /></Zoom>,
+	<Zoom overlayBgColorEnd={"rgba(0, 0, 0, 0.7)"}><img src={require("assets/images/bg/55.jpg")} alt={"Aion Preview"} width={500} /></Zoom>,
+	<Zoom overlayBgColorEnd={"rgba(0, 0, 0, 0.7)"}><img src={require("assets/images/bg/19.jpg")} alt={"Aion Preview"} width={500} /></Zoom>
 ];
 
 const towerOfEternityLore = (
@@ -39,7 +41,7 @@ export class Presentation extends PureComponent
 	{
 		return (
 			<>
-				<EmblaCarousel className={"presentation-carousel"} width={"100%"} loop draggable
+				<EmblaCarousel className={"presentation-carousel"} width={"100%"} loop
 							   autoplay={false} delayLength={10000} children={items} />
 				<Grid container className={"presentation"} direction={"column"} alignItems={"center"} justify={"center"}>
 					<Element name={"lore-section"} />
