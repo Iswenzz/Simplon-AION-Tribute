@@ -7,13 +7,13 @@ import "./Presentation.scss";
 import MediaCard from "../../../components/MediaCard/MediaCard";
 
 const items = [
-	<img src={require("assets/images/bg/25.jpg")} />,
+	<img src={require("assets/images/bg/52.jpg")} />,
 	<img src={require("assets/images/bg/26.jpg")} />,
-	<img src={require("assets/images/bg/35.jpg")} />,
+	<img src={require("assets/images/bg/25.jpg")} />,
 	<img src={require("assets/images/bg/24.jpg")} />,
-	<img src={require("assets/images/bg/32.jpg")} />,
-	<img src={require("assets/images/bg/39.jpg")} />,
-	<img src={require("assets/images/bg/19.jpg")} />,
+	<img src={require("assets/images/bg/56.jpg")} />,
+	<img src={require("assets/images/bg/55.jpg")} />,
+	<img src={require("assets/images/bg/19.jpg")} />
 ];
 
 const towerOfEternityLore = (
@@ -38,17 +38,14 @@ export class Presentation extends PureComponent
 	{
 		return (
 			<>
-				<Parallax className={"parallax-carousel"} bgImageAlt="index" strength={400}
-						  bgImage={require("assets/images/bg/43.jpg")}>
-					<EmblaCarousel className={"presentation-carousel"} width={"100%"}
-								   autoplay={false} delayLength={10000} children={items} />
-				</Parallax>
+				<EmblaCarousel className={"presentation-carousel"} width={"100%"} loop draggable
+							   autoplay={false} delayLength={10000} children={items} />
 				<Grid container className={"presentation"} direction={"column"} alignItems={"center"} justify={"center"}>
 					<Paper className={"presentation-paper"} title={"The Tower of Eternity"} desc={towerOfEternityLore}
 						   image={require("assets/images/bg/40.jpg")}
 						   previewStyle={{right: "-30%"}} paperStyle={{left: "-20%"}} />
-					<Parallax className={"presentation-cards"} bgImageAlt="index" strength={400}
-							  bgImage={require("assets/images/bg/21.jpg")}>
+					<Parallax className={"presentation-cards"} bgImageAlt="index" blur={4} strength={400}
+							  bgImage={require("assets/images/bg/6.jpg")}>
 						<Grid container justify={"center"} alignItems={"stretch"} direction={"row"}>
 							<MediaCard title={"Katalam"} desc={"Katalam was rich in diversity. An abundance of forests spread along the northern parts and sides of the map, an image in stark contrast with the arid and dry wasteland that made up the center. The southern part of the map was buried under a glacier, with its many mountain formations, cavern systems and imposing ice structures making for one of the game's most popular sightseeing spots."} image={require("assets/images/bg/17.jpg")} />
 							<MediaCard title={"Pandaemonium"} desc={"Pandaemonium, the city of darkness, is the capital of the Asmodian faction and is the apex of Asmodian technology, culture and style. Pandaemonium is the center of Asmodian life and as such, all aspects of Asmodian lifestyle can be found there. From the master artisans to the traders and brokers to government officials, all the denizens of Pandaemonium work diligently for the prosperity of Asmodae."} image={require("assets/images/bg/33.jpg")} />

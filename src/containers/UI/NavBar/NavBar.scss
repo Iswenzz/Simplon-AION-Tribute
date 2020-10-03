@@ -1,6 +1,17 @@
 .navbar {
-	background-color: rgba(40, 40, 40, 0.4) !important;
+	background-color: rgba(40, 40, 40, 0.7) !important;
 	padding: 0 10%;
+
+	#{&}-logo {
+		text-decoration: none;
+
+		h2 {
+			font-family: 'Cinzel Decorative', cursive;
+			color: gainsboro;
+			font-size: 24px;
+			width: 300px;
+		}
+	}
 
 	button {
 		margin: 0 1em;

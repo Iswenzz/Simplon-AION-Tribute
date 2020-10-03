@@ -14,7 +14,9 @@ export interface EmblaCarouselProps
 	height?: string,
 	width?: string,
 	style?: React.CSSProperties,
-	className?: string
+	className?: string,
+	draggable?: boolean,
+	loop?: boolean
 }
 
 export interface EmblaCarouselState
@@ -25,7 +27,7 @@ export interface EmblaCarouselState
 	selectedIndex: number,
 	scrollSnaps: number[],
 	delay: number,
-	isRunning: boolean
+	isRunning: boolean,
 }
 
 /**
@@ -95,7 +97,7 @@ export const EmblaCarouselComponent: FunctionComponent<EmblaCarouselProps> = (pr
 			component="article">
 			<section style={{ width: props.width, height: props.height }} className="embla">
 				<EmblaCarouselReact className="embla-viewport" emblaRef={setEmbla} 
-					options={{ loop: false, draggable: false }} htmlTagName="section">
+					options={{ loop: props.loop, draggable: props.draggable }} htmlTagName="section">
 					<ul style={{ width: props.width, height: props.height }} 
 						className="embla-container">
 						{props.children.map((Child, index) => (
