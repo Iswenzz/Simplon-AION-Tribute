@@ -2,6 +2,7 @@ import React, {FunctionComponent} from "react";
 import Home from "containers/Home/Home";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { createMuiTheme, responsiveFontSizes, ThemeProvider } from "@material-ui/core";
+import "./App.scss";
 
 /**
  * The main app container.

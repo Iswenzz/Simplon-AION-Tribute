@@ -5,7 +5,6 @@ import NavBar from "../UI/NavBar/NavBar";
 import Presentation from "./Presentation/Presentation";
 import Footer from "../UI/Footer/Footer";
 import "./Home.scss";
-import "Common.scss";
 
 export const Home: FunctionComponent = (): JSX.Element =>
 {
