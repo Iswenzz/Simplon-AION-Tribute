@@ -1,5 +1,4 @@
-![](https://i.imgur.com/XFvRaaO.png)
-# Simplon JS TP
+# Simplon AION Tribute
 ![](https://i.imgur.com/OnMCmKJ.jpg)
 
 Vous devez réaliser un site internet dont le sujet est : “A tribute to…” Choisissez une thématique qui vous plait et développez un site dédié. Par ex : les Sneakers / Bob Marley / Miyasaki / Les Kangourous / Les chats / Les cités d’Or / Un pays etc….
